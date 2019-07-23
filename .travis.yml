@@ -1,0 +1,10 @@
+dist: trusty
+sudo: required
+language: bash
+before_install:
+- curl https://raw.githubusercontent.com/express42/otus-homeworks/2019-05/run.sh |
+  bash
+notifications:
+  slack:
+    rooms:
+      secure: VFYYlMuNg3JaqApnvwnZ0caz/Nvok3u3oqaLWDh7IEe9ygtBHyFIvf3pwGrY0yZFaWRlAad4Hsv8JqbxkiC3wz/B3naCeuXHmzS1/bukrvn5vogzPGKcU6FXmP5ypcnhS6H+/wL3FqquwPItiWzEdT8OnL9BQkazyTjgG0tu9vboQ2Go3lP2ltB2GnNkQHPRZLKN0A+hlkun38RN5DQnAjOLtqlYhVGrUZ9/vHY8o6Qp5Tjj6RDRgk0Q2xe5JoCF7ZOjc9aOzb/H4wSxYDJCMj2F5cIJHDF0kb4txBtNzTvXxtvwOFPf+8r+dpGJuVmzNOH+vzYC8xJsTqatYYPUKoinrdGjgwGpSg2f+fvDtlXEOdZOUOkPeOjRxx099FRmg1OWy/kSMPdsu12VdVlNhQwNjuPRCS0iR8bp1mgmwdeP/JE+7vih2ihATpcainibhInnn5nUpMyeVekaotCLjo8x35h2mntHKHZjgE+HWHKxMg4AGI5ZW3Rc1T7AHIRWi3Dveop76kuTJ0S9w2fvB+iiMvXkbtTwyVPr7wvx6T5MTfjjqYOVLwi14V9dT/XvCsKOwbCYhUuitRjqDkRNoxCP0czbdwINfZpmVEu7bIg/1p4r2ZUMHwlpzcazeKGWW/APIcpa4JYV+EuW3coSBEuhJR9nBU27bmxpCzYyviQ=
