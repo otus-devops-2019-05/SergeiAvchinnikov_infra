@@ -39,5 +39,5 @@
 
 ```
 bastion_IP = 35.228.245.152
-someinternalhots_IP = 10.166.0.3
+someinternalhost_IP = 10.166.0.3
 ```
