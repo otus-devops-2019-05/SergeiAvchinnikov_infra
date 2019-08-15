@@ -33,3 +33,11 @@
 делаем `chmod 400 ~/.ssh/config (с другими правами не работаем)`
 
 подключаемся `ssh someinternalhost`
+
++ настраиваем VPN
++ добавляем параметры подключения в README.md
+
+```
+bastion_IP = 35.228.245.152
+someinternalhots_IP = 10.166.0.3
+```
