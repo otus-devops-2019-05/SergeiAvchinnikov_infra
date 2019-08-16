@@ -1,6 +1,7 @@
 # SergeiAvchinnikov_infra
 ## **Оглавление:**
 - [Знакомство с облачной инфраструктурой и облачными сервисами (ДЗ №3)](#ДЗ3)
+- [Основные сервисы GCP](#ДЗ4)
 
 ## <a name="ДЗ3"></a>Знакомство с облачной инфраструктурой и облачными сервисами (ДЗ №3)
 + создаем ветку cloud-bastion
@@ -40,4 +41,34 @@
 ```
 bastion_IP = 35.228.245.152
 someinternalhost_IP = 10.166.0.3
+```
+## <a name="ДЗ4"></a>Основные сервисы GCP (ДЗ №4)
++ создаем ветку cloud-testapp
++ переносим файлы из предыдущего задания в папку VPN
++ устанавливаем и проверяем gcloud на рабочую машину
++ создаем новый инстанс (reddit-app), настраиваем ssh config, подключаемся
++ устанавливаем ruby, bundler, mongodb
++ деплоим приложение
++ настраиваем файрволл
++ проверяем доступность приложения
++ создаем скрипты install_ruby.sh, install_mongodb.sh, deploy.sh
++ сoздаем startup script startup.sh
++ все проверяем
+
+```
+testapp_IP = 35.228.80.6
+testapp_port = 9292
+```
+
++ создаем правило для файрволла из консоли с помощью gcloud:
+```
+gcloud compute firewall-rules create default-puma-server\
+  --description="rules for puma-server for test app"\
+  --direction=INGRESS\
+  --priority=1000\
+  --network=default\
+  --action=ALLOW\
+  --rules=tcp:9292\
+  --source-ranges=0.0.0.0/0\
+  --target-tags=puma-server
 ```
