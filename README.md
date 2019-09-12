@@ -87,3 +87,4 @@ gcloud compute firewall-rules create default-puma-server\
 + создаем скрипт create-reddit-vm.sh для создания VM с помощью командной строки
 и утилиты gcloud
 
+
