@@ -1,0 +1,10 @@
+{
+	"project_id": "id-xxxxxx",
+	"source_image_family":"ubuntu-13",
+	"machine_type":"c",
+	"image_description": "basic image",
+	"disk_size": "9",
+	"disk_type":"standard",
+	"network":"default",
+	"tags":"tag_example"
+}
