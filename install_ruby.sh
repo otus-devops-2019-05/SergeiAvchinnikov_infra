@@ -8,3 +8,4 @@ else echo "$DateStr Ruby installation failed."
 fi
 ruby -v
 bundle -v
+
